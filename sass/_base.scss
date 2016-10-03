@@ -1,0 +1,14 @@
+body {
+    font-size: $font-size;
+    color: $paragraph;
+    -webkit-font-smoothing: antialiased;
+    font-family: $font;
+}
+header {
+        margin:40px 0px;
+        @include clearfloats;
+}
+::selection {
+    background: #FF8C00;
+}
+

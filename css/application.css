@@ -1,0 +1,277 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  font-size: 17px;
+  color: #5c5c5c;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  margin: 40px 0px;
+  zoom: 1;
+  /* For IE 6/7 (trigger hasLayout) */
+}
+header:before {
+  content: "";
+  display: table;
+}
+header:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+::selection {
+  background: #FF8C00;
+}
+
+/* social colours */
+.logo {
+  float: left;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  display: inline-block;
+  border: 3px solid #5c5c5c;
+  opacity: 0.7;
+  -webkit-transition: 0.3s linear;
+  -moz-transition: 0.3s linear;
+  -ms-transition: 0.3s linear;
+  -o-transition: 0.3s linear;
+  transition: 0.3s linear;
+}
+.logo:hover {
+  opacity: 1;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1105px;
+}
+
+@font-face {
+  font-family: 'si';
+  src: url("/fonts/socicon.eot");
+  src: url("/fonts/socicon.eot?#iefix") format("embedded-opentype"), url("/fonts/socicon.woff") format("woff"), url("/fonts/socicon.ttf") format("truetype"), url("/fonts/socicon.svg#icomoonregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  @font-face {
+    font-family: si;
+    src: url(PATH_TO/socicon.svg) format(svg);
+}
+}
+.soc {
+  float: right;
+  display: inline-block;
+  margin: 0px;
+  padding: 0px;
+}
+
+.soc li {
+  display: inline-block;
+}
+
+.soc li a {
+  font-family: si!important;
+  font-style: normal;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: block;
+  line-height: 39px;
+  font-size: 21px;
+  color: #d8d8d8;
+  padding: 0px 13px;
+  -webkit-transition: 0.3s linear;
+  -moz-transition: 0.3s linear;
+  -ms-transition: 0.3s linear;
+  -o-transition: 0.3s linear;
+  transition: 0.3s linear;
+}
+
+.soc-icon-last {
+  padding-right: 0 !important;
+}
+
+.soc-dribbble:before {
+  content: '\e023';
+}
+.soc-dribbble:hover {
+  color: #ea4c89;
+}
+
+.soc-github:before {
+  content: '\e030';
+}
+.soc-github:hover {
+  color: #333333;
+}
+
+.soc-linkedin:before {
+  content: '\e049';
+}
+.soc-linkedin:hover {
+  color: #007bb6;
+}
+
+.soc-instagram:before {
+  content: '\e057';
+}
+.soc-instagram:hover {
+  color: #517fa4;
+}
+
+.soc-mail:before {
+  content: '\e01f';
+}
+.soc-mail:hover {
+  color: #4285f4;
+}
+
+.page-title {
+  margin: 100px 0 60px;
+}
+
+.page-title_name {
+  font-size: 73px;
+  color: #212121;
+  font-weight: 600;
+  text-align: left;
+  margin-bottom: 35px;
+}
+
+.page-title_line {
+  width: 100px;
+  height: 10px;
+  background: #2196F3;
+  clear: both;
+  display: block;
+  margin: 24px 0 12px;
+}
+
+.page-title_description {
+  font-size: 26px;
+  color: #5c5c5c;
+  display: inline-block;
+  clear: both;
+  text-align: left;
+  font-weight: 300;
+  margin: 12px 0 40px;
+}
+
+.home-main_img {
+  display: block;
+}
+
+.home-main {
+  overflow: hidden;
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1105px;
+}
+
+@media screen and (max-width: 769px) {
+  header {
+    margin: 30px 0px;
+  }
+
+  .page-title_name {
+    text-align: center;
+    width: 100%;
+    font-size: 52px;
+    margin: 0 0 24px;
+  }
+
+  .page-title_line {
+    margin: 12px auto;
+  }
+
+  .page-title_description {
+    margin: 12px 0 20px;
+    text-align: center;
+    width: 100%;
+    font-size: 28px;
+  }
+
+  .home-main_img {
+    margin: 0 -25%;
+    width: 150%;
+  }
+}
+@media screen and (max-width: 599px) {
+  .soc li a {
+    padding: 0px 9px;
+  }
+}
+@media screen and (max-width: 1107px) {
+  .home-main_img {
+    margin: 0;
+    width: 100%;
+  }
+}

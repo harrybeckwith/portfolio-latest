@@ -1,0 +1,35 @@
+@media screen and (max-width: 769px) {
+    header {
+        margin:30px 0px;
+    }
+    .page-title_name {
+            text-align: center;
+    width: 100%;
+    font-size: 52px;
+    margin: 0 0 24px;
+    }
+    .page-title_line {
+        margin: 12px auto;
+    }
+    .page-title_description {
+            margin: 12px 0 20px;
+    text-align: center;
+    width: 100%;
+    font-size: 28px;
+    }
+    .home-main_img {
+        margin: 0 -25%;
+        width: 150%;
+    }
+}
+@media screen and (max-width: 599px) {
+    .soc li a {
+        padding:0px 9px;
+    }
+}
+@media screen and (max-width: 1107px) {
+    .home-main_img {
+        margin:0;
+        width:100%;
+    }
+}
